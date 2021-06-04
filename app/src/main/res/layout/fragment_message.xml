@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         tools:context=".ui.MessageFragment">
 
-              <EditText
+        <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Your name..."
@@ -17,16 +17,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/name_box"
-            android:background="#999999"
+            android:background="@color/Crane_purple_900"
+            android:textColor="@color/white"
+            android:textColorHint="#A8A3A3"
             android:padding="16dp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Your name..."
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="4dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="#999999"
+            android:backgroundTint="@color/Crane_purple_900"
+            android:textColor="@color/white"
+            android:textColorHint="#A8A3A3"
+            android:background="@drawable/roundshape"
             android:padding="16dp"
             android:id="@+id/message_box"
             app:layout_constraintEnd_toStartOf="@id/send_button" />
