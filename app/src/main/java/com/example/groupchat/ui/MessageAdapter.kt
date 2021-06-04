@@ -1,4 +1,4 @@
-package com.example.groupchat
+package com.example.groupchat.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.groupchat.databinding.MessageListItemBinding
 import com.example.groupchat.model.Message
 
-class MessageAdapter(private val layoutInflater: LayoutInflater) : ListAdapter<Message, MessageAdapter.MessageViewHolder>(DiffUtilCallback) {
+class MessageAdapter(private val layoutInflater: LayoutInflater) : ListAdapter<Message, MessageAdapter.MessageViewHolder>(
+    DiffUtilCallback
+) {
 
     object DiffUtilCallback : DiffUtil.ItemCallback<Message>() {
         override fun areItemsTheSame(oldItem: Message, newItem: Message): Boolean {
